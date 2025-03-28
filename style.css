@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+}
+main {
+    position: relative;
+    width: 100%; /* Largura fixa */
+    height: 52.25rem; /* Altura fixa */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa */
+    border: 1px solid #ccc; /* Apenas para visualização */
+
+    
+}
+.container__cartas{
+    position: relative;
+    width: 100%; /* Largura fixa */
+    height: 36rem; /* Altura fixa */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa */
+    border: 1px solid #ccc; /* Apenas para visualização */
+    background-color: #312D64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    
+}
+.mulish-bold{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+#Astro{
+    position: absolute;
+    top: 0;
+    right: 1.875rem;
+}
+#text {
+    font-family: "Mulish", sans-serif;
+    position: absolute;
+    top: 19.5rem;
+    left: 6.81rem;
+}
+#titulo{
+    color: #B52184
+}
+#sub {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 1.1rem;
+    color: #312D64;
+} 
+.cartas{
+
+    position: relative;
+    height: 28rem;
+    width: 22.8rem;
+    background-color: #FFFFFF;
+    border-radius: 3.3rem;
+}
+.t2{
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    color: #B52184;
+   margin-right: 1rem;
+   margin-left: 2rem;
+   margin-bottom: 1.5rem;
+}
+ .t3{
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+.lua{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.container__formulario {
+    color: #B52184;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column; /* Empilha os elementos */
+    gap: 10px; /* Espaço entre os itens */
+    border: 1px solid #ccc; /* Apenas para visualização */
+    width: 100%; /* Define um tamanho fixo */
+    height: 38.25rem; /* Define um tamanho fixo */
+    margin: 0 auto ;
+    align-items: flex-start; /* Garante que os itens não fiquem no final do container */
+    justify-content: flex-start; /* Alinha os itens no topo */
+    
+    box-sizing: border-box; /* Faz com que width e height incluam padding e borda */
+}
+#nome{
+    border-radius: 2rem;
+}
+.titulo-formulario{
+    margin-top: 5.93rem;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    white-space: nowrap; /* Impede a quebra de linha */
+    width: 100%; /* Garante que ocupa toda a largura do container */
+
+}
+input{
+    box-sizing: border-box;
+    gap: 3rem; /* Espaço entre os itens */
+}
+.caixa__de__texto{
+    margin-right: 6rem;
+    margin-left: 6.81rem;
+    width: 37rem;
+    height: 3rem;
+    border-radius: 0.54rem;
+    text-decoration: none;
+}
+.estrelas{
+    position: absolute;
+    right: 0;
+    
+    
+    z-index: -1;
+}
+button:hover{ 
+    background-color: rgb(91, 91, 255); 
+    color: white; 
+    transition-property: background-color, color; 
+    transition-duration: 2s; 
+    transition-timing-function: ease; 
+ }
+button{
+    background-color: #312D64;
+    width: 9.43rem;
+    height: 2.81rem;
+    border-radius: .7rem;
+    margin-left: 6.81rem;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+#MSG input {
+    padding-bottom: 3.9rem;  /* aumenta mais */
+    padding-left: .6rem;
+    height: 6rem;
+    line-height: 1.4;
+    font-size: 1rem;
+    border-radius: 0.54rem;
+    box-sizing: border-box;
+}
+#MSG input::placeholder { 
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 1rem; 
+}
+footer{
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    height: 4rem;
+    color: #FFFFFF;
+    background-color: #343193;
+    width: 100%;
+    display: flex;
+    align-items: center;   /* alinha verticalmente */
+    justify-content: center; /* alinha horizontalmente */
+}
+/* Media query para telas maiores */
+@media (max-width: 768px) {
+    .container__cartas {
+        width: 100%; /* A largura se adapta ao tamanho da tela */
+        height: auto; /* Deixa a altura flexível */
+        flex-direction: column; /* As cartas ficam empilhadas verticalmente */
+        gap: 2rem; /* Diminui o espaço entre as cartas no mobile */
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      main{
+        position: relative;
+        width: 100%; /* Largura fixa */
+        height: 30rem; /* Altura fixa */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        overflow: hidden; /* Esconde conteúdo que ultrapassa */
+        border: 1px solid #ccc; /* Apenas para visualização */
+        padding-bottom: 5rem;
+      }
+      #Astro{
+        max-width: 60%;
+        margin-right: 5rem;
+      }
+      .text-main{
+        margin-top: 3rem;
+        margin-left: 100rem;
+
+      }
+      .container__cartas > .carta {
+        width: 80%; /* Ajusta o tamanho das cartas */
+        margin: 0 auto; /* Centraliza as cartas */
+      }
+}
